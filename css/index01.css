@@ -1,0 +1,347 @@
+@charset "utf-8";
+body,html{
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+/*公共样式*/
+.page01,.page02,.page03, .page04, .page05, .page06{
+    font-family: "宋体";
+}
+p{
+    font-size: 0.8rem;
+    color: #7f7f7f;
+    text-align: center;
+}
+.title{
+    text-align: center;
+}
+.title h1{
+    font-family: "宋体";
+    font-size: 2rem;
+    color: #444444;
+}
+.title p{
+    font-size: 0.9rem;
+    color: #959595;
+    margin-top: 1.25rem;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:2.5rem;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+
+/*end*/
+
+
+/*index样式*/
+/*头部*/
+
+
+.header{
+    position: relative;
+}
+.header .navbar-default{
+    background: transparent;
+    width: 100%;
+    border:none;
+}
+.header > .navbar{
+    height: 4rem;
+    line-height: 4rem;
+    position: absolute;
+    top:0px;
+}
+.header > .navbar > .container .navbar-nav>li a{
+    line-height: 0.75rem;
+    margin-top:1rem;
+
+}
+.header > .navbar > .container .navbar-nav>li a:hover{
+    border-bottom: 0.1rem solid blue;
+    color:#fff;
+    background: transparent;
+}
+.header .navbar > .container .navbar-nav > .active >a{
+    background: transparent;
+    border-bottom: 0.1rem solid blue;
+}
+.header .navbar > .container .navbar-nav>li a{
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+
+/*动态固顶导航条*/
+.header .navbar.fixed-top{
+    position: fixed;
+    background: #fff;
+    box-shadow: 0px 1px 0.15rem #e3e3e3;
+}
+.header .navbar.fixed-top >.container .navbar-nav >li a{
+    color: #333;
+}
+
+
+/*适配移动端*/
+@media (max-width: 640px){
+    .header > .navbar{
+        position: static;
+        height: auto;
+        min-height: 3.5rem;
+    }
+
+    .header .navbar-header .navbar-toggle{
+        margin-top: 1.4rem;
+    }
+
+    .header >.navbar >.container .navbar-nav>li a{
+        color: #333;
+    }
+    .header >.navbar >.container .navbar-nav>li a:hover{
+        color: #333;
+    }
+}
+
+
+/*page01*/
+.page01 .container{
+    margin: 2.5rem auto;
+}
+.page01 .container .row > div{
+    text-align: center;
+    margin-top: 2rem;
+}
+.page01 .container .row > div h5{
+    font-size: 0.9rem;
+    color: #818892;
+    margin: 1.25rem 0;
+}
+.page01 .container .row > div .icon i{
+    display: inline-block;;
+    width: 4.25rem;
+    height: 4.25rem;
+    border-radius: 50%;
+    line-height: 4.25rem;
+    text-align: center;
+}
+.page01 .container .row > div .icon .iconfont{
+    color: #fff;
+}
+
+
+/*page02*/
+
+.page02 .container{
+    margin-top: 6rem;
+}
+.page02 .container .row .item{
+    margin-top: 3.25rem;
+}
+.page02 .container .row .item .media-left{
+    padding-top: 1.2rem;
+    padding-left: 0.6rem;
+}
+.page02 .container .row .item .media-body h4{
+    font-size: 0.9rem;
+    color: #818892;
+    margin: 1.25rem 0;
+}
+.page02 .container .row .item .media-body p{
+    text-align: left;
+    width: 90%;
+}
+.page02 .container .row .media-left .iconfont{
+    color: #337ab7;
+}
+
+
+/*page03*/
+.page03 .container{
+    margin: 2.5rem auto;
+}
+.page03 .container{
+    margin-top: 8rem;
+}
+.page03 .container .title p{
+    width: 90%;
+    margin: auto;
+}
+.page03 .container .row > div{
+    text-align: center;
+    margin-top: 2rem;
+}
+.page03 .container .row > div h5{
+    font-size: 0.9rem;
+    color: #818892;
+    margin: 1.25rem 0;
+}
+.page03 .container .row > div .icon i{
+    display: inline-block;
+    width: 4.25rem;
+    height: 4.25rem;
+    border-radius: 50%;
+    line-height: 4.25rem;
+    text-align: center;
+}
+.page03 .container .row > div .icon .iconfont{
+    color: #fff;
+}
+
+
+/*page04*/
+.page04 {
+    margin: 2rem 0px;
+
+}
+.page04 .container{
+    margin-top: 4rem;
+    text-align: center;
+}
+.page04 .container > .row > div{
+    margin-top: 2rem;
+}
+.page04 .container > .row .item.animation-delay02{
+    animation-delay: 0.2s;
+}
+.page04 .container > .row .item.animation-delay04{
+    animation-delay: 0.4s;
+}
+.page04 .container > .row .item.animation-delay06{
+    animation-delay: 0.6s;
+}
+.page04 .container > .row > div > .border{
+    border:0.1rem solid #6173f4;
+}
+.page04 .container > .row > div > .border >.bottom{
+    list-style: none;
+    padding: 0;
+}
+.page04 .container > .row > div > .border >.bottom li{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    color:#666;
+}
+.page04 .container > .row >div > .border h3{
+    font-size: 0.9rem;
+    line-height: 2.1rem;
+    padding: 0.35rem 1rem;
+    background: #6173f4;
+    color: #fff;
+    border-radius: 0.25rem;
+    width: 40%;
+    margin: -1.5rem auto 0px auto;
+    position: relative;
+}
+/*.page04 .container > .row >div > .border .caret{
+    margin-top:-20px;
+    color:#6473e8;
+}*/
+.page04 .container > .row >div > .border h3:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right:0.5rem solid transparent;
+    border-top:0.5rem solid #6173f4;
+    position: absolute;
+    top:2.75rem;
+    left:2.15rem;
+}
+.page04 .container > .row >div > .border h6{
+    font-size: 0.75rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+.page04 .container > .row >div > .border p{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 0.75rem;
+}
+.page04 .container > .row >div > .border .btn{
+    margin-bottom: 1.5rem;
+}
+
+
+/*page05*/
+.page05{
+    padding: 5rem 0px;
+    text-align: center;
+}
+.page05 .container .title p{
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+.page05 .container .row .item{
+    margin-top: 2rem;
+}
+.page05 .container .row .item img{
+    width: 100%;
+    height: 100%;
+}
+.page05 .container .row .item >h2{
+    text-align: center;
+    font-size: 1.4rem;
+}
+.page05 .container .row .item > .content{
+    margin-top: 2rem;
+}
+.page05 .container .row .item > .content p{
+    font-size: 0.85rem;
+    line-height: 1.8rem;
+    text-indent: 2rem;
+    text-align: justify;
+    color: #8b8b8b;
+}
+
+
+/*page06*/
+.page06 .container{
+    margin-bottom: 3.5rem;
+}
+.page06 .container .row{
+    margin-top: 2.75rem;
+}
+.page06 .container .row >div h2{
+
+}
+.page06 .container .row >div p{
+    text-align: left;
+    font-size: 0.9rem;
+}
+.page06 .container .row >div p+p{
+    padding-top: 0.5rem;
+}
+.page06 .container .row >div p > .iconfont{
+    color: #6072f4;
+}
+
+
+/*footer*/
+.footer >p{
+    text-align: center;
+    font-size: 0.75rem;
+}
+.footer >p span{
+    color: #6173f4;
+}
+
